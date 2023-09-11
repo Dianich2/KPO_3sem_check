@@ -1,0 +1,31 @@
+﻿Сборка начата 09.09.2023 15:44:03.
+Уровень детализации журнала: Normal.     1>Проект "D:\Учёба\3сем\SE_Lab14\SE_Lab14\SE_Lab14.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Создание "Debug\SE_Lab14.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt In.cpp
+         In.cpp
+     1>D:\Учёба\3сем\SE_Lab14\SE_Lab14\In.cpp(40,18): warning C4018: <: несоответствие типов со знаком и без знака
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Учёба\3сем\SE_Lab14\Debug\SE_Lab14.exe" /INCREMENTAL /ILK:"Debug\SE_Lab14.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Учёба\3сем\SE_Lab14\Debug\SE_Lab14.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Учёба\3сем\SE_Lab14\Debug\SE_Lab14.lib" /MACHINE:X86 Debug\Error.obj
+         Debug\In.obj
+         Debug\Log.obj
+         Debug\Out.obj
+         Debug\Parm.obj
+         Debug\SE_Lab14.obj
+         SE_Lab14.vcxproj -> D:\Учёба\3сем\SE_Lab14\Debug\SE_Lab14.exe
+       FinalizeBuildStatus:
+         Файл "Debug\SE_Lab14.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\SE_Lab14.tlog\SE_Lab14.lastbuildstate".
+     1>Сборка проекта "D:\Учёба\3сем\SE_Lab14\SE_Lab14\SE_Lab14.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\Учёба\3сем\SE_Lab14\SE_Lab14\SE_Lab14.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\Учёба\3сем\SE_Lab14\SE_Lab14\In.cpp(40,18): warning C4018: <: несоответствие типов со знаком и без знака
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:01.12
