@@ -1,0 +1,16 @@
+1	tfi(ti,ti)
+2	{
+3	dti;
+4	i=iv(ivi);
+5	ri;
+6	};
+7	m
+8	{
+9	dti;
+10	dti;
+11	dti;
+12	i=i(i,i);
+13	i=l;
+14	i=l;
+15	i=l;
+16	};

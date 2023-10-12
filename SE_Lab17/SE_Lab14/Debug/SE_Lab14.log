@@ -1,0 +1,45 @@
+﻿Сборка начата 10.10.2023 16:40:06.
+Уровень детализации журнала: Normal.     1>Проект "D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\SE_Lab14.vcxproj" в узле 2 (целевые объекты Build).
+     1>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (SE_Lab14.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+     1>InitializeBuildStatus:
+         Создание "Debug\SE_Lab17.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt LA.cpp
+         LA.cpp
+     1>D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\LA.cpp(392,24): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\LA.cpp(543,23): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\LA.cpp(549,23): warning C4018: <: несоответствие типов со знаком и без знака
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Учёба\3сем\КПО\Лабы\SE_Lab17\Debug\SE_Lab17.exe" /INCREMENTAL /ILK:"Debug\SE_Lab17.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Учёба\3сем\КПО\Лабы\SE_Lab17\Debug\SE_Lab17.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Учёба\3сем\КПО\Лабы\SE_Lab17\Debug\SE_Lab17.lib" /MACHINE:X86 Debug\Error.obj
+         Debug\FST.obj
+         Debug\In.obj
+         Debug\IT.obj
+         Debug\LA.obj
+         Debug\Log.obj
+         Debug\LT.obj
+         Debug\Out.obj
+         Debug\Parm.obj
+         Debug\SE_Lab17.obj
+         SE_Lab14.vcxproj -> D:\Учёба\3сем\КПО\Лабы\SE_Lab17\Debug\SE_Lab17.exe
+       FinalizeBuildStatus:
+         Файл "Debug\SE_Lab17.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\SE_Lab17.tlog\SE_Lab17.lastbuildstate".
+     1>Сборка проекта "D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\SE_Lab14.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\SE_Lab14.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект PrepareForBuild) -> 
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (SE_Lab14.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+
+
+       "D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\SE_Lab14.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\LA.cpp(392,24): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\LA.cpp(543,23): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\Учёба\3сем\КПО\Лабы\SE_Lab17\SE_Lab14\LA.cpp(549,23): warning C4018: <: несоответствие типов со знаком и без знака
+
+    Предупреждений: 4
+    Ошибок: 0
+
+Прошло времени 00:00:01.29
