@@ -1,0 +1,19 @@
+﻿Сборка начата 24.10.2023 16:36:52.
+Уровень детализации журнала: Normal.     1>Проект "D:\Учёба\3сем\КПО\Лабы\SE_Asm2\SE_Asm2.vcxproj" в узле 2 (целевые объекты Build).
+     1>InitializeBuildStatus:
+         Обращение к "Debug\SE_Asm2.tlog\unsuccessfulbuild".
+       _MASM:
+       Целевой объект "_MASM" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       Link:
+         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Учёба\3сем\КПО\Лабы\SE_Asm2\Debug\SE_Asm2.exe" /INCREMENTAL /ILK:"Debug\SE_Asm2.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Учёба\3сем\КПО\Лабы\SE_Asm2\Debug\SE_Asm2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Учёба\3сем\КПО\Лабы\SE_Asm2\Debug\SE_Asm2.lib" /MACHINE:X86 Debug\lab2.obj
+         SE_Asm2.vcxproj -> D:\Учёба\3сем\КПО\Лабы\SE_Asm2\Debug\SE_Asm2.exe
+       FinalizeBuildStatus:
+         Файл "Debug\SE_Asm2.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\SE_Asm2.tlog\SE_Asm2.lastbuildstate".
+     1>Сборка проекта "D:\Учёба\3сем\КПО\Лабы\SE_Asm2\SE_Asm2.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.35

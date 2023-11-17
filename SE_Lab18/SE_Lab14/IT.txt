@@ -1,0 +1,11 @@
+   id  datatype    idtype      Line     value     Scope
+  abc       INT         F         1         0
+    a       INT         P         1         0         abc
+    b       INT         P         1         0         abc
+    c       INT         V         3         0         abc
+   L0       INT         L         4         2         abc
+ main       INT         F         7         0
+    x       INT         V         9         0         main
+   L1       INT         L        10         1         main
+   L2       INT         L        10         2         main
+   L3       INT         L        11         0         main

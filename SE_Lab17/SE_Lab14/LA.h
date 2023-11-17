@@ -1,4 +1,6 @@
 #pragma once
+#include<iostream>
+#include<stack>
 #include"stdafx.h"
 #include"LA.h"
 #include"IT.h"
@@ -6,9 +8,9 @@
 #define MARK '\''
 #define NEW_LINE '|'
 #define SEMICOLON ';'
-#define COMMA','
+#define COMMA ','
 #define LEFT_BRACE '{'
-#define RIGHT_BRACE'}'
+#define RIGHT_BRACE '}'
 #define LEFTTHESIS '('
 #define RIGHTTHESIS ')'
 #define PLUS '+'

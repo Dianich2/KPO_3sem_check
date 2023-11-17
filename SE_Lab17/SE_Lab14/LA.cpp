@@ -1,4 +1,3 @@
-#include<iostream>
 #include"LA.h"
 #include"stdafx.h"
 #include"In.h"
@@ -75,7 +74,8 @@ namespace LA
 		current_entry_LT.sn = 0;
 		current_entry_LT.idxTI = 0;
 		current_entry_LT.lexema[0] = NULL;
-		IT::Entry* currentScope=NULL;
+		std::stack<IT::Entry*> scope;
+		scope.push(NULL);
 		int number_literal = 0;
 		IT::Entry current_entry_IT;
 		__LexTable.size = 0;
@@ -126,12 +126,13 @@ namespace LA
 					current_entry_IT.idtype = IT::L;
 					current_entry_IT.idxfirstLE = currentLine;
 					current_entry_IT.value.vint = atoi(str);
-					current_entry_IT.scope = NULL;
+					current_entry_IT.scope = scope.top();
 					IT::Add(__IdTable, current_entry_IT);
+					number_literal++;
 				}
 				if (current_entry_LT.lexema[0] == LEX_ID)
 				{
-					current_entry_IT.scope = currentScope;
+					current_entry_IT.scope = scope.top();
 					current_entry_LT.idxTI = __IdTable.size;
 					memcpy(current_entry_IT.id, str, 5);
 					current_entry_IT.id[5] = '\0';
@@ -154,10 +155,6 @@ namespace LA
 					if (parmFlag)
 					{
 						current_entry_IT.idtype = IT::P;
-						if (functionFlag)
-						{
-							current_entry_IT.scope = currentScope;
-						}
 					}
 					if (__LexTable.table[__LexTable.size - 1].lexema[0] == LEX_FUNCTION)
 					{
@@ -223,6 +220,7 @@ namespace LA
 					current_entry_IT.value.vstr->str[strlen(str)] = '\0';
 					current_entry_IT.value.vstr->len = strlen(current_entry_IT.value.vstr->str);
 					current_entry_LT.sn = currentLine;
+					current_entry_IT.scope = scope.top();
 					LT::Add(__LexTable, current_entry_LT);
 					IT::Add(__IdTable, current_entry_IT);
 					current_entry_LT.lexema[0] = NULL;
@@ -241,10 +239,9 @@ namespace LA
 				current_entry_LT.sn = currentLine;
 				LT::Add(__LexTable, current_entry_LT);
 				current_entry_LT.lexema[0] = NULL;
-				std::cout << __LexTable.table[__LexTable.size - 2].lexema[0];
-				if ((functionFlag||mainFlag) && currentScope != NULL && __LexTable.table[__LexTable.size -1].lexema[0] == LEX_BRACELET)
+				if (__LexTable.table[__LexTable.size -1].lexema[0] == LEX_BRACELET)
 				{
-					currentScope = NULL;
+					scope.pop();
 					functionFlag = false;
 				}
 				break;
@@ -257,7 +254,7 @@ namespace LA
 			case LEFT_BRACE:
 				if (mainFlag)
 				{
-					currentScope = &__IdTable.table[__IdTable.size - 1];
+					scope.push(& __IdTable.table[__IdTable.size - 1]);
 				}
 				current_entry_LT.lexema[0] = LEX_LEFTBRACE;
 				current_entry_LT.sn = currentLine;
@@ -278,7 +275,7 @@ namespace LA
 				if (__LexTable.table[__LexTable.size-3].lexema[0] == LEX_FUNCTION)
 				{
 					parmFlag = true;
-					currentScope = &__IdTable.table[__IdTable.size - 1];
+					scope.push(& __IdTable.table[__IdTable.size - 1]);
 				}
 				/*if (__IdTable.table[__LexTable.table[__LexTable.size - 1].idxTI].idtype == IT::F)
 				{
@@ -370,6 +367,7 @@ namespace LA
 				for (int j = 0; j < strlen(current_entry_IT.value.vstr->str); j++) {
 					IT_file << current_entry_IT.value.vstr->str[j];
 				}
+				IT_file << std::setw(10);
 			}
 			IT_file << std::setw(10);
 			if (current_entry_IT.scope != NULL) {
