@@ -1,1 +1,0 @@
-integer function abc(integer a,integer b)|{|declare integer c;|c=a+2;|return c;|};|main|{|declare integer x;|x=abc(1,2);|return 0;|}|
