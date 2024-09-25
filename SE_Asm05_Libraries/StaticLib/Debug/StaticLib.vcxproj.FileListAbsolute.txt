@@ -1,2 +1,0 @@
-C:\Users\HP\Desktop\StaticLib\Debug\StaticLib.lib
-D:\Учёба\3сем\КПО\Лабы\SE_Asm05\StaticLib\Debug\StaticLib.lib
